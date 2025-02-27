@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Thông Tin</title>
+    <style>
+        label, textarea {
+            display: inline-block;
+            width: 100px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="form-container">
+        <h3>Hãy tạo ra một form điền thông tin cơ bản</h3>
+        <form>
+            <label>Họ và tên:</label>
+            <input type="text" id="name">
+            <br>
+
+            <label>Email:</label>
+            <input type="email" id="email">
+            <br>
+
+            <label>Ngày sinh:</label>
+            <input type="date" id="dob">
+            <br>
+
+            <label>Giới tính:</label>
+                <input type="radio" id="gender" value="Nam"> Nam
+                <input type="radio" id="gender" value="Nữ"> Nữ
+            <br>
+
+            <label>Số điện thoại:</label>
+            <input type="tel" id="phone">
+            <br>
+
+            <label>Chuyên ngành:</label>
+            <input type="text" id="major">
+            <br>
+
+            <label>Năm nhập học:</label>
+            <input type="number" id="year">
+            <br>
+
+            <label>Điểm GPA:</label>
+            <input type="number" id="gpa" step="0.01">
+            <br>
+
+            <label>Địa chỉ:</label>
+            <textarea type="address" rows="3"></textarea>
+            <br>
+
+            <label>Lớp học:</label>
+            <select type="class">
+                <option value="Lớp 1">Lớp 1</option>
+                <option value="Lớp 2">Lớp 2</option>
+                <option value="Lớp 3">Lớp 3</option>
+            </select>
+            <br>
+            <label>Ngày đăng ký học:</label>
+            <input type="datetime-local" name="registration_date">
+            <br>
+
+            <button type="submit">Gửi thông tin</button>
+        </form>
+    </form>
+
+</body>
+</html>
